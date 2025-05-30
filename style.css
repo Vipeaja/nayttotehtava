@@ -1,0 +1,106 @@
+
+
+h1 {
+    font-size: 48px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3 {
+    font-size:12px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 2.5rem;
+    padding: 0 1rem;
+    display: inline-block;
+    height: 100%;
+    align-self: center;
+    color: black;
+    text-decoration: solid;
+
+}
+a:hover {
+    color: white;
+    background-color: black;
+    text-decoration: solid;
+}
+
+body {
+  border-color: black;
+  border-style: solid;
+  height: 70rem;
+}
+.cred {
+    text-align: right;
+}
+.header {
+  
+  grid-area: header;
+  text-align: left;
+  margin-left: 40px;  
+  
+}
+
+.banner {
+  
+  grid-area: banner;
+  text-align: center;
+  margin: 0;  
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  
+}
+
+
+.nav {
+  grid-area: nav;
+  text-align: left;
+  
+  border-color: black;
+  border-style: solid;
+  
+}
+.side1{
+  border-color: black;
+  border-style: solid;
+  margin: 10px;
+}
+.side {
+  grid-area: side;
+  text-align: left;
+  
+  
+
+}
+.main {
+  grid-area: main;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.logo {
+  grid-area: logo;
+  text-align: left;
+  margin-left: 20px;
+  
+}
+
+
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template:
+    [row1-start] "logo header header" 20% [row1-end]
+    [row2-start] "nav nav nav" 7% [row2-end]
+    [row3-start] "banner banner banner" 15% [row3-end]
+    [row4-start] "main main side" 58% [row4-end]
+    / 10% auto 25%;
+}
+

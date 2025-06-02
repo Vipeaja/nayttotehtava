@@ -14,7 +14,7 @@ h3 {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-a {
+.a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     line-height: 2.5rem;
     padding: 0 1rem;
@@ -23,9 +23,10 @@ a {
     align-self: center;
     color: black;
     text-decoration: solid;
+   
 
 }
-a:hover {
+.a:hover {
     color: white;
     background-color: black;
     text-decoration: solid;
@@ -34,7 +35,8 @@ a:hover {
 body {
   border-color: black;
   border-style: solid;
-  height: 70rem;
+  height: 75rem;
+  background-color: #5c9ed9;
 }
 .cred {
     text-align: right;
@@ -58,7 +60,13 @@ body {
   
 }
 
-
+.nav2 {
+  grid-area: nav;
+  text-align: left;
+  
+  
+  
+}
 .nav {
   grid-area: nav;
   text-align: left;
@@ -66,11 +74,14 @@ body {
   border-color: black;
   border-style: solid;
   
+  
 }
 .side1{
   border-color: black;
   border-style: solid;
   margin: 10px;
+  padding-left: 1rem;
+  background-color: #fccb00;
 }
 .side {
   grid-area: side;
@@ -78,6 +89,14 @@ body {
   
   
 
+}
+.main2 {
+  border-color: black;
+  border-style: solid;
+  grid-area: main;
+  text-align: left;
+  margin-left: 0rem;
+  padding-left: 1rem;
 }
 .main {
   grid-area: main;
@@ -92,6 +111,13 @@ body {
   
 }
 
+.kuva {
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+}
+
+
 
 .container {
     display: grid;
@@ -104,3 +130,93 @@ body {
     / 10% auto 25%;
 }
 
+.container_springfield {
+    display: grid;
+    height: 100vh;
+    grid-template:
+    [row1-start] "logo header header" 20% [row1-end]
+    [row2-start] "nav nav nav" 7% [row2-end]
+    [row3-start] "banner banner banner" 25% [row3-end]
+    [row4-start] "main main main" 48% [row4-end]
+    / 10% auto 25%;
+}
+
+.container_openlocations {
+    display: grid;
+    height: 100vh;
+    grid-template:
+    [row1-start] "logo header header" 20% [row1-end]
+    [row2-start] "nav nav nav" 7% [row2-end]
+    [row3-start] "main main main" 73% [row3-end]
+    / 10% 65% 25%;
+}
+
+.container_locations {
+    display: grid;
+    justify-content: space-around;
+    height: 100vh;
+    grid-template-columns: 30% 30% 30%;
+    gap: 1rem;
+    padding-right: 1rem;
+    
+    padding-top: 5rem;
+    height: 10rem;
+    
+}
+
+.container_locations > div {
+  
+  
+  text-align: center;
+  margin: 0;  
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  
+}
+
+.container_picturelocations {
+    display: grid;
+    justify-content: space-around;
+    height: 100vh;
+    grid-template-columns: auto auto auto auto;
+    gap: 1rem;
+    padding-right: 1rem;
+    
+    padding-top: 5rem;
+    height: 10rem;
+    
+}
+
+.container_picturelocations > div {
+  
+  
+  text-align: center;
+  margin: 0;  
+  border-color: black;
+  border-style: solid;
+  border-width: 3px;
+  
+}
+
+.container_character {
+    display: grid;
+    height: 100vh;
+    grid-template:
+    [row1-start] "logo header header" 20% [row1-end]
+    [row2-start] "nav nav nav" 7% [row2-end]
+    [row3-start] "side main main" 73% [row3-end]
+    / 10% auto 25%;
+}
+
+.container_characterinfo {
+    display: grid;
+    height: 100vh;
+    margin: 10rem;
+    margin-top: 3rem;
+    grid-template:
+    [row1-start] "nav nav nav" 7% [row1-end]
+    [row2-start] "main main main" auto [row2-end]
+    
+    / 10% auto 25%;
+}

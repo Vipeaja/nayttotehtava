@@ -63,7 +63,7 @@ body {
 .nav2 {
   grid-area: nav;
   text-align: left;
-  
+  display: flex;
   
   
 }
@@ -97,6 +97,7 @@ body {
   text-align: left;
   margin-left: 0rem;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 .main {
   grid-area: main;

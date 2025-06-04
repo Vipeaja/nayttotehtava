@@ -9,8 +9,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>forum</title>
     <link rel="stylesheet" href="style.css">
+    <script src="forum.js" defer></script>
+    
 </head>
 <body>
+    <div class="container_openlocations">
+        <div class="header">
+            <h1 style="margin-left: 8rem; line-height: 5rem;"><a href="index.html">The Simpsons page</a></h1>
+        </div>
+        <div class="logo">
+            <img src="logo.png"  height="100%">
+        </div>
+        <div class="nav">
+            <a class="a" href="springfield.html">springfield</a>
+            <a class="a" href="characters.html">characters</a>
+            <a class="a" href="forum.html">forum</a>
+        </div>
+        
+        <div class="main">
+           <button id="open-dialog" onclick="opendial(event)" style="border-style: solid; margin: 1rem;"><h2 style="margin: 0;">New message</h2></button>
+            <dialog id="dialo">
+            <form>
+                <label for="nimi">Name:</label>
+                <input type="text" id="nimi" name="nimi">
+                
+                <br>
+                <label for="title">Title:</label>
+                <input type="text" id="title" name="title">
+                
+                <br>
+                <textarea id="texti" name="texti" cols="40" rows="10"></textarea>
+                <br>
+                <aside style="text-align: right;">
+                    <button id="close" onclick="closedial(event)" name="lähetä" style="border: solid;">cancel</button>
+                    <button id="1" onclick="sendet(event)" style="border: solid;">send</button>
+                </aside>
+            </form>
+            </dialog>
+
+            <h3 id="ul">
+
+            </h3>
+        </div>
+    </div>
     
 </body>
 </html>

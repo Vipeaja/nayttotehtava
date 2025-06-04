@@ -26,17 +26,37 @@ h3 {
    
 
 }
+a {
+    color: black;
+    text-decoration: solid;
+}
+
+label {
+    font-size:12px ;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.br {
+    background-color:#000000; 
+    height:3px; 
+    width:100%;
+}
+
 .a:hover {
     color: white;
     background-color: black;
     text-decoration: solid;
 }
 
+
+
 body {
   border-color: black;
   border-style: solid;
-  height: 75rem;
+  box-sizing: border-box;
   background-color: #5c9ed9;
+  height: 125rem;
+  
 }
 .cred {
     text-align: right;
